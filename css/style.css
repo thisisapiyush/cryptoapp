@@ -114,7 +114,12 @@ h1{font-size:30px;font-weight:14px;text-align:center!important;font-family:'Fran
 .read-more-link{background: rgb(82, 79, 248);padding: 4px;color: #fff;font-weight: bold;border:0px;}
 .socialmedia{width:25px;height:25px;}
 
-
+/* For Markets*/
+.martab{border-collapse: collapse;width:100%;text-align: center;}
+.martab th{background-color:#E4E4E4;padding-top: 12px;padding-bottom: 12px;text-align: center}
+.martab tr:hover {background-color: #ddd;}
+.martab td{padding: 15px;border: 1px solid grey;}
+.market-col{width:100%;padding:0;margin:0 0 50px;float:left;text-align:left}
 
 
 /* For Guides*/
@@ -136,9 +141,3 @@ ul.nobullets li>p {font-weight:normal;}
 .blockchain-text p{margin-left:25% ;width:50%; overflow-wrap: break-word;margin-bottom:15px;}
 .blockchain-text { text-align: center;background-color:#77e72c;}
 .btn{background-color:#1bc972;}
-
-/* for exclusives */
-.exclusive-img{float:left;margin:0 35px 0 0;width:20%; height: 150px}
-.type-col1{width:100%;padding:0;margin:0 0 50px;float:left;text-align:center;}
-.type{background-color:#7dcff1;}
-.exclusive-col{width:100%;padding:0;margin:0 0 50px;float:left;text-align:center;}
