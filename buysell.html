@@ -1,14 +1,314 @@
-<html>
-<head>
-<title>
-Buy/Sell
-</title>
-</head>
-<body>
-<center>
-<h1>
-Coming soon...
-</h1>
-</center>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Buying & Selling </title>
+
+        <link rel="stylesheet" href="css/style.css"> 
+      
+        <link rel="stylesheet" href="css/responsive.css"> 
+        <script src="js/buysell.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--navbar-->
+            <nav class="navbar">
+                <div class="inner-width">
+                    <a href="/" class="logo">Crypto Portal</a>
+
+                    <div class="navbar-menu ">
+                        <a href="index.html"> Home </a>
+                        <a href="news.html"> News </a>
+                        <a href="markets.html"> Markets </a>
+                        <a href="buysell.html"> Buy/Sell/Swap </a>
+                    </div>
+
+                    <!-- responsive menu -->
+                    <div class="topnav">
+                        <a href="#home" class="as"></a>
+                        <div id="myLinks">
+                            <a href="index.html"> Home </a>
+                            <a href="news.html"> News </a>
+                            <a href="markets.html"> Markets </a>
+                            <a href="buysell.html"> Buy/Sell/Swap </a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i><img src="images/menuicon.jpg" width="56" height="41" class="mi" alt="menu"/></i>
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+
+          
+        </header>
+
+        <section class='type'>
+            <h2>&nbsp;</h2>
+            <div class="row">
+                <div class="tab-full-col text-left">
+                    <nav>
+                        <ul class='tabs'>
+                            <li class='active' data-tab-id='tab1'>Buy</li>
+                            <li data-tab-id='tab2'>Sell</li>
+                            <li data-tab-id='tab3'>Swap</li>
+                        </ul>
+                    </nav>
+
+                    <div class='content-section'>
+                        <div id='tab1' class='contenttab active'>
+
+                            <div class="tabl"><img style="width: 30px;height: 30px;float: left" src="images/dollor.jpg" alt="dollar"/>
+                                <p style="float:left;margin-left: 10px;font-weight: bold">Available Amount</p></div>
+                            <div class="tabr"><strong>$0.00</strong></div>
+                            <div class="clear"></div>
+                            <div class="devideline2"></div>
+                            <p></p>
+
+                            <div class="tabl">I am buying</div>
+                           
+                            <div class="tabl"><img src="images/dollar.jpg" width="29" height="35" alt="dollar"/> <input class="input1" type="text"></div>
+                           
+                            <div class="clear"></div>
+                            <!--<div class="divideline3"></div>-->
+                            <br/>
+                            <div class="devideline2"></div><br/>
+                            <div class="tabl"><img src="images/btc.jpg" width="35" height="33" alt="bitcoin"/> <div class="bper"><img src="images/arrow2.jpg" width="17" height="19" alt="arrow"/> 2.91%</div> 
+                            </div>
+                            <div class="tabr">
+                                <p>$68,830</p>
+                            </div>
+                            <div class="clear"></div>
+                            <!--<div class="divideline2"></div>-->
+                            <p></p>
+
+                            <div class="news-full-col">
+                                <select class="drop1">
+                                    <option value="saab">BTC</option>
+                                    <option value="saab">ETH</option>
+                                    <option value="saab">BNB</option>
+                                    <option value="saab">ADA</option>
+                                    <option value="saab">DOGE</option>
+                                    <option value="saab">DOT</option>
+                                    <option value="saab">SHIB</option>
+                                    <option value="saab">ICP</option>
+                                    <option value="saab">LINK</option>
+                                    <option value="saab">LTC</option>
+                                    <option value="saab">VET</option>
+                                    <option value="saab">THETA</option>
+                                    <option value="saab">WBTC</option>
+                                    <option value="saab">NEO</option>
+                                    <option value="saab">MIOTA</option>
+                                    <option value="saab">XRP</option>
+                                
+                                </select>
+                            </div>
+
+                            <div class="clear"></div>
+                            <!--<div class="devideline3"></div>-->
+                            <p></p>
+
+                            <button onclick="myFunction()" class= "button">Buy</button>
+                            <button onclick="myFunction1()" class ="button">Make Deposit</button>
+
+
+
+                            <div class="clear"></div>	
+                        </div>
+                        <div id='tab2' class='contenttab'>
+
+                            <!--<div class="divideline2"></div>-->
+                            <div class="tabl"><img src="images/btc.jpg" width="35" height="33" alt=""/> <div class="bper"><img src="images/arrow2.jpg" width="17" height="19" alt="arrow"/> 2.91%</div> 
+                            </div>
+                            <div class="tabr">
+                                <p>$68,830</p>
+                            </div>
+                            <div class="clear"></div>
+                            <!--<div class="divideline2"></div>-->
+
+                            <div class="text-center"><strong>Available BTC : 0.00000000</strong></div>
+                            <p></p>
+
+                            <div class="tabl">I would like to buy</div>
+                        
+
+                            <!--<div class="tabl"><strong>BTC</strong></div>-->
+                            <div class="clear"></div>
+                            <div class="tabl"><div class="news-full-col">
+                                <select class="drop1">
+                                    <option value="saab">BTC</option>
+                                    <option value="saab">ETH</option>
+                                    <option value="saab">BNB</option>
+                                    <option value="saab">ADA</option>
+                                    <option value="saab">DOGE</option>
+                                    <option value="saab">LTC</option>
+                                    <option value="saab">VET</option>
+                                    <option value="saab">THETA</option>
+                                    <option value="saab">WBTC</option>
+                                    <option value="saab">NEO</option>
+                                    <option value="saab">DOT</option>
+                                    <option value="saab">SHIB</option>
+                                    <option value="saab">ICP</option>
+                                    <option value="saab">LINK</option>
+                                    <option value="saab">MIOTA</option>
+                                    <option value="saab">XRP</option>
+                                
+                                    
+                                </select>
+                                </div></div>
+                            
+                            <div class="clear"></div>
+                            <div class="divideline3"></div>
+                            <p></p>
+
+                            <div class="tabl"><img style="width: 30px;height: 30px;float: left" src="images/dollor.jpg" alt="dollar"/>
+                                <p style="float:left;margin-left: 10px;font-weight: bold">Available Funds</p></div>
+                            <div class="tabr"><strong>$0.00</strong></div>
+                            <div class="clear"></div>
+                            <div class="devideline2"></div>
+                            <p></p>
+
+
+
+                            <p></p>
+
+                            <div class="tabl"><img src="images/dollar.jpg" width="29" height="35" alt="dollar"/> <input class="input1" type="text"></div>
+                            <div class="tabr">&nbsp;</div>
+                            <div class="clear"></div>
+                            <div class="divideline3"></div>
+                            <p></p>
+
+                            <button onclick="myFunction2()" class="read-more-link">Sell BTC</button>
+                        
+
+
+                            <div class="clear"></div>
+
+                        </div>
+                        <div id='tab3' class='contenttab'>
+
+                            <div class="roudnum">1</div>
+                            <div class="tabwap"><select class="drop1">
+                                    <option value="volvo">Select a Coin</option>
+                                    <option value="saab">BTC</option>
+                                    <option value="saab">ETH</option>
+                                    <option value="saab">BNB</option>
+                                    <option value="saab">ADA</option>
+                                    <option value="saab">DOGE</option>
+                                    <option value="saab">LTC</option>
+                                    <option value="saab">VET</option>
+                                    <option value="saab">THETA</option>
+                                    <option value="saab">WBTC</option>
+                                    <option value="saab">NEO</option>
+                                    <option value="saab">DOT</option>
+                                    <option value="saab">SHIB</option>
+                                    <option value="saab">ICP</option>
+                                    <option value="saab">LINK</option>
+                                    <option value="saab">MIOTA</option>
+                                    <option value="saab">XRP</option>
+                                
+                                </select></div>
+                            <div class="clear"></div>
+                            <div class="divideline2"></div>
+
+                            <div class="tabl"><strong>Reset</strong></div>
+                            
+                            <div class="clear"></div>
+                            <p></p>
+                            <div class="divideline3"></div>
+
+                            <p></p>
+                            <div class="divideline2"></div>
+
+                            <div class="roudnum">2</div>
+                            <div class="tabwap">
+                                <select class="drop1">
+                                    <option value="volvo">Select a Coin</option>
+                                    <option value="saab">BTC</option>
+                                    <option value="saab">ETH</option>
+                                    <option value="saab">BNB</option>
+                                    <option value="saab">ADA</option>
+                                    <option value="saab">DOGE</option>
+                                    <option value="saab">LTC</option>
+                                    <option value="saab">VET</option>
+                                    <option value="saab">THETA</option>
+                                    <option value="saab">WBTC</option>
+                                    <option value="saab">NEO</option>
+                                    <option value="saab">DOT</option>
+                                    <option value="saab">SHIB</option>
+                                    <option value="saab">ICP</option>
+                                    <option value="saab">LINK</option>
+                                    <option value="saab">MIOTA</option>
+                                    <option value="saab">XRP</option>
+                                </select></div>
+
+                            <div class="clear"></div>
+                            <div class="devideline2"></div>
+
+                            <p></p>
+                            <div class="divideline3"></div>
+                            <p></p>
+                            <button onclick="myFunction4()" class="read-more-link">Swap</button>
+                          
+                            <div class="clear"></div>	
+                        </div>
+                    </div>           
+                    <div class="clear"></div>	                    
+                </div>
+                <div class="clear"></div>	
+                <div class="divideline"></div>
+            </div>
+        </section>
+
+        <div class="clear"></div>	
+        <section class="footer">
+            <center>
+            <h4>Buy/Sell/Swap</h4>
+        </center>
+
+        </section>
+        <script src="js/script.js"></script>
+        <script>
+            (function () {
+                var d = document,
+                        tabs = d.querySelector('.tabs'),
+                        tab = d.querySelectorAll('li'),
+                        contents = d.querySelectorAll('.contenttab');
+                tabs.addEventListener('click', function (e) {
+                    if (e.target && e.target.nodeName === 'LI') {
+                        // change tabs
+                        for (var i = 0; i < tab.length; i++) {
+                            tab[i].classList.remove('active');
+                        }
+                        e.target.classList.toggle('active');
+
+
+                        // change content
+                        for (i = 0; i < contents.length; i++) {
+                            contents[i].classList.remove('active');
+                        }
+
+                        var tabId = '#' + e.target.dataset.tabId;
+                        d.querySelector(tabId).classList.toggle('active');
+                    }
+                });
+            })();
+        </script>
+            <footer class="footer-container">
+                <h4>Crypto Portal</h4>
+                <p>HIT238 Mobile Paradigm</p>
+                <figure>
+                    <a href="http://www.facebook.com/">
+                    <img src="images/facebook.png" alt="Facebook" class="socialmedia" onclick="fb()">
+                </a>
+                <a href="http://www.twitter.com/">
+                    <img src="images/twitter.png" alt="Twitter" class="socialmedia" onclick="tw()">
+                    </a>
+                    <a href="http://www.instagram.com/">
+                    <img src="images/instagram.png" alt="Instagram" class="socialmedia" onclick="insta()">
+                    </a>
+                </figure>
+            </footer>                    
+    </body>
 </html>
